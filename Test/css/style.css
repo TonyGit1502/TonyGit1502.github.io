@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+input {
+  height: 40px;
+  width: 370px;
+  margin-top: 20px;
+  text-align: center;
+  outline: none;
+}
+input:focus,
+input:visited {
+  outline: none;
+}
+button {
+  border: none;
+  width: 230px;
+  height: 40px;
+  background-color: #fab900;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #ffffff;
+}
+button:visited,
+button:focus {
+  outline: none;
+}
+.circle-shadow {
+  background-color: #def3e6;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 80%;
+  left: 90%;
+  border-radius: 50%;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+a.toCall {
+  position: fixed;
+  top: 80%;
+  left: 90%;
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  font-size: 36px;
+  color: #ffffff;
+  background-color: #3cb868;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+a.toCall i.fa {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+a.toCall:hover {
+  text-decoration: none;
+  background-color: #2f9252;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+.popup {
+  display: none;
+  background: url("../img/main-bg.png") no-repeat, center center;
+  background-size: cover;
+  margin-left: 30%;
+  margin-top: 5%;
+  height: 440px;
+  width: 570px;
+  -webkit-box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+a.close-btn {
+  display: inline-block;
+  margin-left: 500px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+a.close-btn:hover {
+  text-decoration: none;
+  color: #000000;
+}
+button.subsribe {
+  background: url("../img/submit-bg.png") no-repeat center center;
+  background-size: cover;
+}

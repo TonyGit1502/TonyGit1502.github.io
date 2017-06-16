@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Varnoff-Studio Test</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section id="main">
+		<div class="container">
+			<div class="row">
+				<div class="circle-border"></div>
+				<div class="circle-shadow"></div>
+				<div class="col-xs-4 col-xs-offset-4">
+					<a href="#" class="toCall"><i class="fa fa-phone" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="popup">
+		<a href="#" class="close-btn"><img src="img/close-btn.png" alt="close-btn"></a>
+		<div class="row">
+			<div class="col-xs-12 text-center main-form">
+				<form action="#">
+					<img src="img/logotype.png" alt="logotype">
+					<p>Закажите обратный звонок,<br> мы перезвоним Вам в ближайшее время!</p>
+					<input type="text" id="user_name" placeholder="Ваше имя">
+					<input type="tel" id="user_phone_number" placeholder="Enter your phone number">
+					<button class="subsribe">Жду звонка</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".toCall").click(function(){
+				$(".popup").fadeIn(500);
+			});
+			$(".close-btn").click(function(){
+				$(".popup").fadeOut(500);
+			});
+		});
+	</script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+		jQuery(function($){
+			$('#user_phone_number').mask("+7 (999)-999-99-99");
+		});
+	</script>
+</body>
+</html>

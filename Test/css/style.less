@@ -1,0 +1,151 @@
+///////////////			colors  		////////////////
+@base-white: #fff;
+@base-black: #000;
+@base-callBtn: #3cb868;
+@base-shadow: #def3e6;
+@input-text: #767676;
+@submit-firstColor: #f49a00;
+@submit-secondColor: #fab900;
+///////////////			basic setting  		/////////////////////////
+body{
+	margin: 0;
+	padding: 0;
+}
+input {
+	height: 40px;
+	width: 370px;
+	margin-top: 20px;
+	text-align: center;
+	outline: none;
+	&:focus, &:visited{
+		outline: none;
+	}
+}
+button{
+	border: none;
+	width: 230px;
+	height: 40px;
+	background-color: @submit-secondColor;
+	margin-top: 30px;
+	font-size: 18px;
+	color: @base-white;
+	&:visited, &:focus{
+		outline: none;
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////
+.circle-shadow{
+	background-color: @base-shadow;
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	top: 80%;
+	left: 90%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-animation-name: pulse;
+	-o-animation-name: pulse;
+	animation-name: pulse;
+	-webkit-animation-duration: 2.5s;
+	-o-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+a.toCall{
+	position: fixed;
+	top: 80%;
+	left: 90%;
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	font-size: 36px;
+	color: @base-white;
+	background-color: @base-callBtn;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	padding: 10px;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	i.fa{
+		padding-left: 15px;
+    	padding-top: 15px;
+	}
+	&:hover{
+		text-decoration: none;
+		background-color: darken(@base-callBtn, 10%);
+	}
+}
+@-webkit-keyframes pulse{
+	0%{	
+		-webkit-transform: scale(1,1);
+		-ms-transform: scale(1,1);
+		-o-transform: scale(1,1);
+		transform: scale(1,1);
+	}
+	50%{
+		-webkit-transform: scale(1.5, 1.5);
+		-ms-transform: scale(1.5, 1.5);
+		-o-transform: scale(1.5, 1.5);
+		transform: scale(1.5, 1.5);
+	}
+	100%{
+		-webkit-transform: scale(1,1);
+		 -ms-transform: scale(1,1);
+		 -o-transform: scale(1,1);
+		 transform: scale(1,1); 
+	}
+}
+@keyframes pulse{
+	0%{	
+		-webkit-transform: scale(1,1);
+		-ms-transform: scale(1,1);
+		-o-transform: scale(1,1);
+		transform: scale(1,1);
+	}
+	50%{
+		-webkit-transform: scale(1.5, 1.5);
+		-ms-transform: scale(1.5, 1.5);
+		-o-transform: scale(1.5, 1.5);
+		transform: scale(1.5, 1.5);
+	}
+	100%{
+		-webkit-transform: scale(1,1);
+		 -ms-transform: scale(1,1);
+		 -o-transform: scale(1,1);
+		 transform: scale(1,1); 
+	}
+}
+.popup{
+	display: none;
+	background: url("../img/main-bg.png") no-repeat, center center;
+	background-size: cover;
+	margin-left: 30%;
+	margin-top: 5%;
+	height: 440px;
+	width: 570px;
+	-webkit-box-shadow: 0 0 5px 10px rgba(0,0,0,.4);
+	box-shadow: 0 0 5px 10px rgba(0,0,0,.4);
+}
+a.close-btn{
+	display: inline-block;
+	margin-left: 500px;
+	margin-top: 20px;
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+		color: @base-black;
+	}
+}
+button.subsribe{
+	background: url("../img/submit-bg.png") no-repeat center center;
+	background-size: cover;
+}
